@@ -41,70 +41,127 @@ export default function PrivacyPolicy() {
             </ul>
           </section>
 
-          {/* Google Sign-In Authentication */}
+          {/* Authentication Methods */}
           <section>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">
-              Google Sign-In Authentication
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">
+              Authentication Methods
             </h3>
-            <p className="text-gray-600 mb-4 leading-relaxed">
-              The Application uses Google Sign-In as the primary authentication
-              method. When you sign in with Google, we collect and process the
-              following information from your Google account:
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              The Application offers multiple authentication methods to provide
+              you with convenient and secure sign-in options.
             </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4 mb-4">
-              <li>
-                <strong className="text-gray-800">Name</strong>: Your full name
-                as registered with Google
-              </li>
-              <li>
-                <strong className="text-gray-800">Email Address</strong>: Your
-                Google email address
-              </li>
-              <li>
-                <strong className="text-gray-800">Profile Picture</strong>: Your
-                Google profile photo (if available)
-              </li>
-              <li>
-                <strong className="text-gray-800">Google User ID</strong>: A
-                unique identifier for your Google account
-              </li>
-            </ul>
 
-            <p className="text-gray-600 mb-2 leading-relaxed">
-              This information is used to:
-            </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4 mb-4">
-              <li>Create and manage your user account</li>
-              <li>Personalize your experience within the Application</li>
-              <li>
-                Communicate with you regarding your account and Application
-                updates
-              </li>
-              <li>Verify your identity and maintain account security</li>
-            </ul>
-
-            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg mb-4">
-              <p className="text-gray-700 leading-relaxed">
-                <strong className="text-gray-900">Important</strong>: The
-                Application only requests access to basic profile information
-                from Google. We do not access your Gmail, Google Drive, or other
-                Google services beyond the authentication data. Your Google
-                account password is never shared with or stored by the
-                Application.
+            {/* Google Sign-In */}
+            <div className="mb-6">
+              <h4 className="text-lg font-semibold text-gray-800 mb-3">
+                Google Sign-In
+              </h4>
+              <p className="text-gray-600 mb-3 leading-relaxed">
+                When you sign in with Google, we collect and process the
+                following information from your Google account:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4 mb-3">
+                <li>
+                  <strong className="text-gray-800">Name</strong>: Your full
+                  name as registered with Google
+                </li>
+                <li>
+                  <strong className="text-gray-800">Email Address</strong>: Your
+                  Google email address
+                </li>
+                <li>
+                  <strong className="text-gray-800">Profile Picture</strong>:
+                  Your Google profile photo (if available)
+                </li>
+                <li>
+                  <strong className="text-gray-800">Google User ID</strong>: A
+                  unique identifier for your Google account
+                </li>
+              </ul>
+              <p className="text-gray-600 leading-relaxed">
+                You can revoke the Application's access to your Google account
+                at any time through your{" "}
+                <a
+                  href="https://myaccount.google.com/permissions"
+                  className="text-blue-600 hover:text-blue-800 underline"
+                >
+                  Google Account Settings
+                </a>
+                .
               </p>
             </div>
 
-            <p className="text-gray-600 leading-relaxed">
-              You can revoke the Application's access to your Google account at
-              any time through your{" "}
-              <a
-                href="https://myaccount.google.com/permissions"
-                className="text-blue-600 hover:text-blue-800 underline"
-              >
-                Google Account Settings
-              </a>
-              .
-            </p>
+            {/* Apple Sign-In */}
+            <div className="mb-6">
+              <h4 className="text-lg font-semibold text-gray-800 mb-3">
+                Apple Sign-In
+              </h4>
+              <p className="text-gray-600 mb-3 leading-relaxed">
+                When you sign in with Apple, we collect and process the
+                following information from your Apple ID:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4 mb-3">
+                <li>
+                  <strong className="text-gray-800">Name</strong>: Your full
+                  name as registered with Apple (optional, you can choose to
+                  share or hide)
+                </li>
+                <li>
+                  <strong className="text-gray-800">Email Address</strong>: Your
+                  Apple ID email or a private relay email address if you choose
+                  to hide your email
+                </li>
+                <li>
+                  <strong className="text-gray-800">Apple User ID</strong>: A
+                  unique identifier for your Apple account
+                </li>
+              </ul>
+              <p className="text-gray-600 leading-relaxed mb-3">
+                Apple Sign-In provides additional privacy features, including
+                the option to hide your email address by using Apple's private
+                relay service, which creates a unique, random email address that
+                forwards to your real email.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                You can manage or revoke the Application's access to your Apple
+                ID at any time through your{" "}
+                <a
+                  href="https://appleid.apple.com/"
+                  className="text-blue-600 hover:text-blue-800 underline"
+                >
+                  Apple ID Settings
+                </a>{" "}
+                under "Sign-In with Apple".
+              </p>
+            </div>
+
+            {/* Common Usage */}
+            <div className="mb-4">
+              <p className="text-gray-600 mb-2 leading-relaxed font-semibold">
+                This authentication information is used to:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4">
+                <li>Create and manage your user account</li>
+                <li>Personalize your experience within the Application</li>
+                <li>
+                  Communicate with you regarding your account and Application
+                  updates
+                </li>
+                <li>Verify your identity and maintain account security</li>
+              </ul>
+            </div>
+
+            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
+              <p className="text-gray-700 leading-relaxed">
+                <strong className="text-gray-900">Important</strong>: The
+                Application only requests access to basic profile information
+                for authentication purposes. We do not access your email
+                content, cloud storage (Google Drive, iCloud), or other services
+                beyond the authentication data. Your account passwords are never
+                shared with or stored by the Application. All authentication is
+                securely handled by Google and Apple's infrastructure.
+              </p>
+            </div>
           </section>
 
           {/* Location Data */}
@@ -208,6 +265,14 @@ export default function PrivacyPolicy() {
               </li>
               <li>
                 <a
+                  href="https://www.apple.com/legal/privacy/"
+                  className="text-blue-600 hover:text-blue-800 underline"
+                >
+                  Apple Sign-In
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://support.google.com/admob/answer/6128543"
                   className="text-blue-600 hover:text-blue-800 underline"
                 >
@@ -278,6 +343,9 @@ export default function PrivacyPolicy() {
                 Revoke Google Sign-In permissions through your Google Account
                 Settings
               </li>
+              <li>
+                Revoke Apple Sign-In permissions through your Apple ID Settings
+              </li>
             </ul>
             <p className="text-gray-600 mb-4 leading-relaxed">
               The Service Provider will retain User Provided data for as long as
@@ -335,11 +403,11 @@ export default function PrivacyPolicy() {
               physical, electronic, and procedural safeguards to protect
               information the Service Provider processes and maintains.
             </p>
-            <p className="text-gray-600 leading-relaxed">
-              When you use Google Sign-In, your authentication is handled
-              securely by Google's infrastructure. The Application only receives
-              authentication tokens and does not have access to your Google
-              account password.
+            <p className="text-gray-600 mb-4 leading-relaxed">
+              When you use Google Sign-In or Apple Sign-In, your authentication
+              is handled securely by Google's and Apple's infrastructure
+              respectively. The Application only receives authentication tokens
+              and does not have access to your Google or Apple account password.
             </p>
           </section>
 
@@ -369,9 +437,9 @@ export default function PrivacyPolicy() {
             <p className="text-gray-600 leading-relaxed">
               By using the Application, you are consenting to the processing of
               your information as set forth in this Privacy Policy now and as
-              amended by us. By signing in with Google, you authorize the
-              Application to access and use your basic Google profile
-              information as described in this policy.
+              amended by us. By signing in with Google or Apple, you authorize
+              the Application to access and use your basic profile information
+              as described in this policy.
             </p>
           </section>
 
